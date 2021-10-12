@@ -1,3 +1,4 @@
+import { InicioComponent } from './inicio/inicio.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,7 +9,9 @@ const routes: Routes = [
   {path: '', redirectTo: 'entrar', pathMatch: 'full'},
 
   {path: 'entrar', component:EntrarComponent},
-  {path: 'cadastrar', component:CadastrarComponent}
+  {path: 'cadastrar', component:CadastrarComponent},
+
+  {path: 'inicio', component:InicioComponent}
 ];
 
 @NgModule({
